@@ -2,7 +2,7 @@
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:amazon="http://schemas.android.com/apk/lib/com.amazon.device.ads"
-    id="com.phonegap.Push.PushNotification"
+    id="com.phonegap.Pushplugin.PushNotification"
     version="1.0.0">
 
   <name>PushNotification</name>
@@ -29,8 +29,8 @@
 	<platform name="android">
 
 		<config-file target="res/xml/config.xml" parent="/*">
-			<feature name="PushNotification" >
-				<param name="android-package" value="com.plugin.gcm.PushNotification"/>
+			<feature name="PushPlugin" >
+				<param name="android-package" value="com.plugin.gcm.PushPlugin"/>
 			</feature>
 		</config-file>
 
@@ -69,8 +69,8 @@
 	<platform name="amazon-fireos">
 
 		<config-file target="res/xml/config.xml" parent="/*">
-			<feature name="PushNotification" >
-				<param name="android-package" value="com.amazon.cordova.plugin.PushNotification"/>
+			<feature name="PushPlugin" >
+				<param name="android-package" value="com.amazon.cordova.plugin.PushPlugin"/>
 			</feature>
             <preference name="showmessageinnotification" value="true" />
             <preference name="defaultnotificationmessage" value="You have a new message." />
@@ -112,8 +112,8 @@
 	<platform name="ios">
 
 		<config-file target="config.xml" parent="/*">
-			<feature name="PushNotification">
-				<param name="ios-package" value="PushNotification"/>
+			<feature name="PushPlugin">
+				<param name="ios-package" value="PushPlugin"/>
 			</feature>
 		</config-file>
 
@@ -129,8 +129,8 @@
   <platform name="wp8">
 
     <config-file target="config.xml" parent="/*">
-      <feature name="PushNotification">
-        <param name="wp-package" value="PushNotification"/>
+      <feature name="PushPlugin">
+        <param name="wp-package" value="PushPlugin"/>
       </feature>
     </config-file>
 
